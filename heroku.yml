@@ -1,0 +1,5 @@
+build:
+  docker:
+    web: .devcontainer/Dockerfile
+run:
+  web: uvicorn app.main:router --port $PORT
